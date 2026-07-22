@@ -11,436 +11,383 @@ Instead of decorative LEDs, make the machine visibly sustainable and repairable:
 * 🔧 **Repair-first construction:** Every major component is accessible with standard hex screws; no glue, and modular printed panels can be replaced individually.
 * 🪵 **Natural material accents:** Bamboo or walnut side grips, cork wrist rests, or leather carrying straps paired with printed structural parts.
 * 🔋 **Energy awareness:** An e-ink status display showing battery level, solar input, and power consumption even when the main system is off.
-* 📦 **Modular expansion:** Magnetic or rail-mounted side modules (e.g., SDR, sensor suite, extra battery, or storage) that can be swapped without opening the main enclosure.
 
 ---
 
-## Phase 0 — Define the Mission
+# 🌱 Phase 0 — Mission Definition
 
-**Goal:** Determine what the cyberdeck is supposed to do.
+**Week 1**
 
-### Write the Project Brief
+## Objectives
 
-Answer:
+* Define the purpose of the cyberdeck.
+* Establish project constraints.
+* Create the project vision.
 
-* What problems should it solve?
-* Where will it be used?
-* Weight limit?
-* Battery life target?
-* Budget?
-* Future upgrades?
+### Deliverables
 
-Example:
-
-> "Portable Linux workstation for programming, robotics, CAD viewing, field data collection, and AI inference with 8+ hours of battery."
+* Project purpose
+* Characteristics goals
+* Uniqueness
+* Inspiration Board
 
 ---
 
-## Phase 1 — Requirements
+# 🌿 Phase 1 — Requirements Engineering
 
-### Functional Requirements
+**Week 2**
 
-Decide whether you need:
+## Objectives
 
-* Programming
-* CAD
-* Electronics work
-* SDR
-* GPS
-* ROS Robotics
-* AI
-* Networking
-* Ham radio
-* Drone control
-* Photography backup
-* Server administration
+Translate ideas into measurable requirements.
 
-### Performance Requirements
+### Tasks
 
-Example
+### Hardware
 
-* Boots under 30 seconds
-* 8-hour battery
-* Fan noise below 30 dB
-* Fits inside a backpack
-* Waterproof to light rain
+* - [ ] Screen size
+* - [ ] Keyboard size
+* - [ ] Battery capacity
+* - [ ] Storage
+* - [ ] CPU/GPU
+* - [ ] Connectivity
+
+### Software
+
+* - [ ] Operating System
+* - [ ] Programming environment
+* - [ ] AI tools
+* - [ ] Robotics tools
+* - [ ] CAD software
+
+### Performance
+
+* - [ ] Battery target
+* - [ ] Temperature limits
+* - [ ] Boot time
+* - [ ] Weight
+* - [ ] Noise level
+
+### Deliverables
+
+* Requirement Specification Document
 
 ---
 
-## Phase 2 — Hardware Architecture
+# ☀️ Phase 2 — System Architecture
 
-Now design the whole computer before buying anything.
+**Weeks 3–4**
 
-### Main Computer
+## Objectives
 
-Choose one:
+Design the cyberdeck as a complete system.
 
-* Raspberry Pi 5
-* Jetson Orin Nano (excellent since you already have one)
-* Mini PC
-* Framework motherboard
-* LattePanda
+### Tasks
 
+### Electronics
 
-### Display
+* - [ ] Select motherboard
+* - [ ] Select display
+* - [ ] Select keyboard
+* - [ ] Select battery
+* - [ ] Select cooling
+* - [ ] Select speakers
+* - [ ] Select USB hub
 
-Choose
+### Architecture
 
-* Size
-* Resolution
-* Brightness
-* Touch or non-touch
+* - [ ] Draw block diagrams
+* - [ ] Draw power diagram
+* - [ ] Draw data connections
+* - [ ] Identify expansion ports
 
-### Input
+### Purchasing
 
-Choose
+* - [ ] Create parts spreadsheet
+* - [ ] Order components
 
-* Mechanical keyboard
-* Split keyboard
-* Trackball
-* Touchpad
-* TrackPoint
-* Rotary encoder
+### Deliverables
 
-### Power
+* System Architecture Diagram
+* Parts List (BOM)
 
-Design
+---
+
+# 🌳 Phase 3 — Solarpunk Industrial Design
+
+**Week 5**
+
+## Objectives
+
+Develop the visual identity before designing the enclosure.
+
+### Tasks
+
+* - [ ] Define color palette
+* - [ ] Select materials
+* - [ ] Define texture language
+* - [ ] Sketch exterior
+* - [ ] Sketch interior layout
+* - [ ] Determine ergonomic angles
+* - [ ] Define modularity
+
+### Deliverables
+
+* Design Sketchbook
+* Style Guide
+
+---
+
+# 🌾 Phase 4 — CAD Development
+
+**Weeks 6–8**
+
+This is the longest phase.
+
+## Week 6
+
+### Component Modeling
+
+* - [ ] Measure every component
+* - [ ] Create accurate CAD models
+* - [ ] Organize CAD library
+
+---
+
+## Week 7
+
+### Internal Layout
+
+* - [ ] Arrange motherboard
+* - [ ] Arrange battery
+* - [ ] Route cables
+* - [ ] Add mounting points
+* - [ ] Add service access
+
+---
+
+## Week 8
+
+### Exterior Design
+
+* - [ ] Design shell
+* - [ ] Design hinges
+* - [ ] Design vents
+* - [ ] Design handles
+* - [ ] Design removable panels
+
+### Deliverables
+
+* Complete CAD Assembly
+
+---
+
+# 🍃 Phase 5 — Thermal Engineering
+
+**Week 9**
+
+### Tasks
+
+* - [ ] Locate heat sources
+* - [ ] Simulate airflow
+* - [ ] Design vents
+* - [ ] Select fans
+* - [ ] Add heatsinks
+
+### Deliverables
+
+* Thermal Layout
+
+---
+
+# 🔋 Phase 6 — Power System
+
+**Week 10**
+
+### Tasks
 
 Battery
 
-↓
+* - [ ] Select cells
+* - [ ] Battery Management System (BMS)
+* - [ ] USB-C Power Delivery
+* - [ ] Charging circuit
 
-Protection
+Solar
 
-↓
+* - [ ] Solar panel
+* - [ ] MPPT charger
+* - [ ] Battery monitoring
 
-Charging
+### Deliverables
 
-↓
-
-Voltage regulation
-
-↓
-
-Computer
-
-↓
-
-Display
-
-↓
-
-USB devices
-
-### Expansion
-
-Leave room for
-
-* SSD
-* SDR
-* GPS
-* LoRa
-* USB hub
-* Ethernet
-* GPIO access
+* Power Diagram
 
 ---
 
-## Phase 3 — Solarpunk Design Language
+# 🔌 Phase 7 — Electrical Integration
 
-Instead of cyberpunk blacks and neon...
+**Week 11**
 
-Think
+### Tasks
 
-### Materials
+* - [ ] Wiring diagram
+* - [ ] Connector selection
+* - [ ] Cable routing
+* - [ ] Heat shrink
+* - [ ] Label wires
 
-* Warm white
-* Sand
-* Olive green
-* Copper
-* Bamboo accents
-* Walnut inserts
-* Brass screws
-* Linen straps
-* Cork grips
+### Deliverables
 
-### Shapes
-
-Avoid sharp military angles.
-
-Use
-
-* Rounded corners
-* Organic curves
-* Visible structural ribs
-* Honeycomb vents
-* Leaf-inspired patterns
-
-### Functional aesthetic
-
-Every detail should have a purpose.
-
-Examples
-
-* Solar panel doubles as lid.
-* Cooling fins become decorative ribs.
-* Cable channels become visible "vines."
-* Battery indicator resembles a seed gauge.
+* Wiring Harness
+* Electrical Documentation
 
 ---
 
-## Phase 4 — CAD
+# 🖨 Phase 8 — Manufacturing
 
-This phase is huge.
+**Weeks 12–13**
 
-### Learn constraints
+## Week 12
 
-Measure every component.
+Prototype
 
-Never model from internet dimensions.
-
-Use calipers.
-
-### Model
-
-1. Motherboard
-2. Display
-3. Keyboard
-4. Batteries
-5. Speakers
-6. USB ports
-7. Hinges
-8. Screws
-
-
-**Build around the components, not the other way around.**
-
-
-### Assemble virtually
-
-Check
-
-* Cable routing
-* Cooling
-* Clearances
-* Maintenance
+* - [ ] Print test pieces
+* - [ ] Verify tolerances
+* - [ ] Adjust CAD
 
 ---
 
-## Phase 5 — Thermal Design
+## Week 13
 
-Map heat sources.
+Final Prints
 
-CPU
+* - [ ] Print enclosure
+* - [ ] Print brackets
+* - [ ] Print vents
+* - [ ] Print accessories
 
-↓
+### Deliverables
 
-Heat sink
-
-↓
-
-Air path
-
-↓
-
-Fan
-
-↓
-
-Exhaust
-
-Never trap hot air.
+* Finished Printed Parts
 
 ---
 
-## Phase 6 — Power System
+# 🔧 Phase 9 — Assembly
 
-Design
+**Week 14**
 
-Solar Panel
+### Tasks
 
-↓
+Mechanical
 
-MPPT Charger
+* - [ ] Install inserts
+* - [ ] Assemble enclosure
+* - [ ] Install hinges
 
-↓
+Electronics
 
-Battery
+* - [ ] Install motherboard
+* - [ ] Install display
+* - [ ] Install battery
+* - [ ] Install cooling
+* - [ ] Connect wiring
 
-↓
+### Deliverables
 
-Battery Management System
-
-↓
-
-USB-C PD
-
-↓
-
-Computer
-
-↓
-
-Accessories
-
-Questions:
-
-* Internal battery?
-* Swappable batteries?
-* External solar charging?
-* USB-C charging?
+* Fully Assembled Cyberdeck
 
 ---
 
-## Phase 7 — Electronics
+# 💻 Phase 10 — Software
 
-Design wiring.
+**Week 15**
 
-Avoid spaghetti cables.
+### Tasks
 
-Use
+Operating System
 
-* JST connectors
-* Ferrules
-* Braided sleeves
-* Heat shrink
-* Wire labels
+* - [ ] Install Linux
+* - [ ] Configure SSH
+* - [ ] Install Docker
+* - [ ] Install development tools
 
-Create a wiring diagram before assembling.
+Customization
 
----
+* - [ ] Configure terminal
+* - [ ] Fan control
+* - [ ] Battery monitoring
+* - [ ] AI software
+* - [ ] Backup system
 
-## Phase 8 — Manufacturing
+### Deliverables
 
-### Print prototypes
-
-Prototype 0
-
-Only verify dimensions.
-
-Prototype 1
-
-Verify fit.
-
-Prototype 2
-
-Verify ergonomics.
-
-Final
-
-High-quality settings.
-
-### Printing checklist
-
-- Orientation
-
-- Supports
-
-- Strength
-
-- Layer height
-
-- Threaded inserts
-
-- Heat-set inserts
+* Fully Configured System
 
 ---
 
-## Phase 9 — Assembly
+# 🌍 Phase 11 — Testing
 
-Order
-
-1. Heat-set inserts
-2. Hinges
-3. Display
-4. Keyboard
-5. Wiring
-6. Cooling
-7. Motherboard
-8. Batteries
-9. Final shell
-
----
-
-## Phase 10 — Software
-
-Install
-
-* Linux
-* Drivers
-* Terminal customization
-* SSH
-* Docker
-* Git
-* VS Code
-* ROS
-* Python
-* Monitoring software
-
-Configure
-
-* Auto-backup
-* Battery monitoring
-* Temperature monitoring
-* Fan control
-
----
-
-## Phase 11 — Testing
+**Week 16 (Days 1–4)**
 
 ### Mechanical
 
-- Opens smoothly
-
-- Doesn't wobble
-
-- Comfortable typing
-
-- Backpack safe
-
+* - [ ] Port accessibility
+* - [ ] Hinge durability
+* - [ ] Keyboard comfort
 
 ### Electrical
 
-- Battery
-
-- Charging
-
-- USB
-
-- Display
-
-- Wi-Fi
-
-- Bluetooth
-
-- GPIO
+* - [ ] Battery runtime
+* - [ ] Charging
+* - [ ] USB functionality
 
 ### Thermal
 
-Run stress tests.
+* - [ ] CPU stress test
+* - [ ] GPU stress test
+* - [ ] Fan performance
 
-Monitor
+### Field Testing
 
-* CPU
-* GPU
-* Battery
+* - [ ] Outdoor use
+* - [ ] Backpack transport
+* - [ ] Programming session
+* - [ ] Battery endurance
 
+### Deliverables
 
-### Field Test
-
-Take it somewhere. Actually use it. Find what annoys you. Iterate.
+* Test Report
+* Issue List
 
 ---
 
-## Phase 12 — Refinement
+# 🌻 Phase 12 — Refinement & Documentation
 
-Improve
+**Week 16 (Days 5–7)**
 
-* Weight
-* Cable routing
-* Ventilation
-* Grip
-* Software
-* Boot time
+### Improvements
 
-Repeat until satisfied.
+* - [ ] Fix design issues
+* - [ ] Improve cable management
+* - [ ] Optimize cooling
+* - [ ] Reduce weight
+* - [ ] Refine software configuration
+
+### Documentation
+
+* - [ ] Final CAD files
+* - [ ] Wiring diagrams
+* - [ ] Bill of Materials (BOM)
+* - [ ] Build log with photos
+* - [ ] User manual
+* - [ ] Maintenance guide
+
+### Final Deliverables
+
+* ✅ Complete Solarpunk Cyberdeck
+* ✅ Parametric CAD project
+* ✅ Printable STL/STEP files
+* ✅ Wiring schematics
+* ✅ Software image and configuration
+* ✅ Full documentation for future upgrades or replication

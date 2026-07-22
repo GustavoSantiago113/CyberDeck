@@ -1,12 +1,14 @@
 # Suggested Timeline
 
-| Week | Goal                                               |
-| ---- | -------------------------------------------------- |
-| 1    | Define requirements and sketch concepts            |
-| 2    | Select hardware and create the system architecture |
-| 3–4  | Build detailed CAD models of purchased components  |
-| 5–6  | Design the enclosure and internal mounts           |
-| 7    | Print and evaluate fit-test prototypes             |
-| 8    | Assemble electronics and validate power delivery   |
-| 9    | Install and configure software                     |
-| 10   | Field-test, document issues, and refine the design |
+| Week | Milestone                                        |
+| ---- | ------------------------------------------------ |
+| 1    | Project vision approved                          |
+| 2    | Requirements frozen                              |
+| 4    | Hardware architecture complete and parts ordered |
+| 5    | Solarpunk design language finalized              |
+| 8    | CAD model complete                               |
+| 10   | Power and thermal systems validated              |
+| 13   | All printed parts finished                       |
+| 14   | Hardware assembled                               |
+| 15   | Software operational                             |
+| 16   | Testing complete and project documented          |
