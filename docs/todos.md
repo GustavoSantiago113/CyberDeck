@@ -45,28 +45,28 @@ Translate ideas into measurable requirements.
 
 ### Hardware
 
-* - [ ] Screen size
-* - [ ] Keyboard size
-* - [ ] Battery capacity
-* - [ ] Storage
-* - [ ] CPU/GPU
-* - [ ] Connectivity
+* - [x] Screen size
+* - [x] Keyboard size
+* - [x] Battery capacity
+* - [x] Storage
+* - [x] CPU/GPU
+* - [x] Connectivity
 
 ### Software
 
-* - [ ] Operating System
-* - [ ] Programming environment
-* - [ ] AI tools
-* - [ ] Robotics tools
-* - [ ] CAD software
+* - [x] Operating System
+* - [x] Programming environment
+* - [x] AI tools
+* - [x] Robotics tools
+* - [x] CAD software
 
 ### Performance
 
-* - [ ] Battery target
-* - [ ] Temperature limits
-* - [ ] Boot time
-* - [ ] Weight
-* - [ ] Noise level
+* - [x] Battery target
+* - [x] Temperature limits
+* - [x] Boot time
+* - [x] Weight
+* - [x] Noise level
 
 ### Deliverables
 
@@ -86,13 +86,14 @@ Design the cyberdeck as a complete system.
 
 ### Electronics
 
-* - [ ] Select motherboard
-* - [ ] Select display
-* - [ ] Select keyboard
-* - [ ] Select battery
-* - [ ] Select cooling
-* - [ ] Select speakers
-* - [ ] Select USB hub
+* - [X] Select motherboard - RaspberryPi 5
+* - [X] Select display - 7" Touchscreen display
+* - [X] Select keyboard - Ultra Thin USB Mini Wired Keyboard (11.2")
+* - [X] Select battery - 10,000 mAh Power Bank with pass-through charging
+* - [X] Select cooling - Home-made fan with motor and 3D printed parts
+* - [X] Select Wi-Fi Anthena - USB Wi‑Fi adapter with removable antennas
+* - [X] Select Solar Pannel + Module - 5V Solar Panel (12W) + Solar USB Charger Controller
+* - [X] Select Memory - 128GB External HD + 32GB SD Card
 
 ### Architecture
 

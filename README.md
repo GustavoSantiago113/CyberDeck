@@ -14,6 +14,8 @@ A CyberDeck inspired on the Solar Punk theme
     - [Project Goals](#project-goals)
     - [Unique Characteristics](#unique-characteristics)
   - [Requirements Engineering](#requirements-engineering)
+  - [System Architecture](#system-architecture)
+    - [Electronics](#electronics)
 
 ---
 
@@ -62,3 +64,8 @@ The purpose of this is to have a distinct portable computer to take to the field
 | Performance | Noise level | Low to Medium |
 
 ---
+
+## System Architecture
+
+### Electronics
+
