@@ -16,6 +16,7 @@ A CyberDeck inspired on the Solar Punk theme
   - [Requirements Engineering](#requirements-engineering)
   - [System Architecture](#system-architecture)
     - [Electronics](#electronics)
+    - [Architecture](#architecture)
 
 ---
 
@@ -69,3 +70,31 @@ The purpose of this is to have a distinct portable computer to take to the field
 
 ### Electronics
 
+* RaspberryPi 5
+* 7" Touchscreen display
+* Ultra Thin USB Mini Wired Keyboard (11.2")
+* 10,000 mAh Power Bank with pass-through charging
+* Home-made fan with motor and leaf-inspired 3D printed parts
+* USB Wi‑Fi adapter with removable antenna
+* 5V Solar Panel (12W) + Solar USB Charger Controller + Outlet charger
+* USB Hub connecting parts
+* 128GB External HD + 32GB SD Card
+
+### Architecture
+
+<center> 
+
+**System Block Diagram**
+
+<img src="docs/System Block Diagram.png">
+
+</center>
+
+
+<center> 
+
+**Mechanical Block Diagram**
+
+<img src="docs/Mechanical Block Diagram.png">
+
+</center>

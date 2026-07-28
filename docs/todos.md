@@ -92,15 +92,13 @@ Design the cyberdeck as a complete system.
 * - [X] Select battery - 10,000 mAh Power Bank with pass-through charging
 * - [X] Select cooling - Home-made fan with motor and 3D printed parts
 * - [X] Select Wi-Fi Anthena - USB Wi‑Fi adapter with removable antennas
-* - [X] Select Solar Pannel + Module - 5V Solar Panel (12W) + Solar USB Charger Controller
+* - [X] Select Powering - 5V Solar Panel (12W) + Solar USB Charger Controller + Outlet charger
 * - [X] Select Memory - 128GB External HD + 32GB SD Card
 
 ### Architecture
 
-* - [ ] Draw block diagrams
-* - [ ] Draw power diagram
-* - [ ] Draw data connections
-* - [ ] Identify expansion ports
+* - [X] System Block Diagram
+* - [X] Mechanical Block Diagram
 
 ### Purchasing
 
