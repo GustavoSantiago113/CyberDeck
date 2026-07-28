@@ -17,6 +17,7 @@ A CyberDeck inspired on the Solar Punk theme
   - [System Architecture](#system-architecture)
     - [Electronics](#electronics)
     - [Architecture](#architecture)
+    - [Bill of Materials](#bill-of-materials)
 
 ---
 
@@ -86,7 +87,7 @@ The purpose of this is to have a distinct portable computer to take to the field
 
 **System Block Diagram**
 
-<img src="docs/System Block Diagram.png">
+<img width = "600px" src="docs/System Block Diagram.png">
 
 </center>
 
@@ -95,6 +96,24 @@ The purpose of this is to have a distinct portable computer to take to the field
 
 **Mechanical Block Diagram**
 
-<img src="docs/Mechanical Block Diagram.png">
+<img width = "600px" src="docs/Mechanical Block Diagram.png">
 
 </center>
+
+### Bill of Materials
+
+| Item                                             | Cost (US$) |
+| ------------------------------------------------ | ---------- |
+| 5V Small Motor for the Fan                       | 3.1        |
+| Raspberry Pi 5 8GB                               | 199        |
+| 5W 5V Solar Panel                                | 8.09       |
+| 7 Inch Touchscreen IPS DSI Display               | 38.99      |
+| Wireless USB WiFi Adapter,with External Antenna  | 4.99       |
+| 7-Port USB-C with power delivery                 | 12.69      |
+| Ultra Thin USB Mini Wired Keyboard (11.2")       | 10.99      |
+| Portable External Solid State Drive 256GB        | 7.79       |
+| 32gb SD card                                     | 9.87       |
+| 10,000 mAh Power Bank with pass-through charging | 24.99      |
+| Solar USB Charger Controller                     | 2.32       |
+| 1 kg 3D Printer filament                         | 13.99      |
+|**Total**                                       |  **336.81**    |

@@ -102,7 +102,7 @@ Design the cyberdeck as a complete system.
 
 ### Purchasing
 
-* - [ ] Create parts spreadsheet
+* - [X] Create parts spreadsheet
 * - [ ] Order components
 
 ### Deliverables
