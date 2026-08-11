@@ -18,6 +18,7 @@ A CyberDeck inspired on the Solar Punk theme
     - [Electronics](#electronics)
     - [Architecture](#architecture)
     - [Bill of Materials](#bill-of-materials)
+  - [Solarpunk Industrial Design](#solarpunk-industrial-design)
 
 ---
 
@@ -117,3 +118,10 @@ The purpose of this is to have a distinct portable computer to take to the field
 | Solar USB Charger Controller                     | 2.32       |
 | 1 kg 3D Printer filament                         | 13.99      |
 |**Total**                                       |  **336.81**    |
+
+## Solarpunk Industrial Design
+
+* **Color pallete:** Light and dark green; solar pannel blue.
+* **Materials**: PLA.
+* **Texture Language**: Leaves
+* 

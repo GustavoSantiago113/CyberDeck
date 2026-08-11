@@ -103,7 +103,7 @@ Design the cyberdeck as a complete system.
 ### Purchasing
 
 * - [X] Create parts spreadsheet
-* - [ ] Order components
+* - [X] Order components
 
 ### Deliverables
 
@@ -122,9 +122,9 @@ Develop the visual identity before designing the enclosure.
 
 ### Tasks
 
-* - [ ] Define color palette
-* - [ ] Select materials
-* - [ ] Define texture language
+* - [X] Define color palette
+* - [X] Select materials
+* - [X] Define texture language
 * - [ ] Sketch exterior
 * - [ ] Sketch interior layout
 * - [ ] Determine ergonomic angles
