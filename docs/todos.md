@@ -125,10 +125,10 @@ Develop the visual identity before designing the enclosure.
 * - [X] Define color palette
 * - [X] Select materials
 * - [X] Define texture language
-* - [ ] Sketch exterior
-* - [ ] Sketch interior layout
-* - [ ] Determine ergonomic angles
-* - [ ] Define modularity
+* - [X] Sketch exterior
+* - [X] Sketch interior layout
+* - [X] Determine ergonomic angles
+* - [X] Define modularity
 
 ### Deliverables
 
