@@ -122,7 +122,7 @@ The purpose of this is to have a distinct portable computer to take to the field
 ## Solarpunk Industrial Design
 
 * **Color pallete:** Light and dark green; solar pannel blue.
-* **Materials:** PLA.
+* **Materials:** PLA, "Leather" and Wire protector.
 * **Texture Language:** Leaves.
 * **Define Modularity:** GPIO pins and Raspberry ports out of structure.
 * **Ergonomic angle:** Opens at maximum of 120 degrees.

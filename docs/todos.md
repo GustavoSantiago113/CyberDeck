@@ -147,9 +147,9 @@ This is the longest phase.
 
 ### Component Modeling
 
-* - [ ] Measure every component
-* - [ ] Create accurate CAD models
-* - [ ] Organize CAD library
+* - [X] Measure every component
+* - [X] Create accurate CAD models
+* - [X] Organize CAD library
 
 ---
 
@@ -157,11 +157,11 @@ This is the longest phase.
 
 ### Internal Layout
 
-* - [ ] Arrange motherboard
-* - [ ] Arrange battery
-* - [ ] Route cables
-* - [ ] Add mounting points
-* - [ ] Add service access
+* - [X] Arrange motherboard
+* - [X] Arrange battery
+* - [X] Route cables
+* - [X] Add mounting points
+* - [X] Add service access
 
 ---
 
