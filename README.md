@@ -19,6 +19,7 @@ A CyberDeck inspired on the Solar Punk theme
     - [Architecture](#architecture)
     - [Bill of Materials](#bill-of-materials)
   - [Solarpunk Industrial Design](#solarpunk-industrial-design)
+  - [Thermal Engineering](#thermal-engineering)
 
 ---
 
@@ -105,7 +106,6 @@ The purpose of this is to have a distinct portable computer to take to the field
 
 | Item                                             | Cost (US$) |
 | ------------------------------------------------ | ---------- |
-| 5V Small Motor for the Fan                       | 3.1        |
 | Raspberry Pi 5 8GB                               | 199        |
 | 5W 5V Solar Panel                                | 8.09       |
 | 7 Inch Touchscreen IPS DSI Display               | 38.99      |
@@ -117,7 +117,8 @@ The purpose of this is to have a distinct portable computer to take to the field
 | 10,000 mAh Power Bank with pass-through charging | 24.99      |
 | Solar USB Charger Controller                     | 2.32       |
 | 1 kg 3D Printer filament                         | 13.99      |
-|**Total**                                       |  **336.81**    |
+| Case with Dual Cooling Fans                      | 12.99      |
+|**Total**                                       |  **349.80**    |
 
 ## Solarpunk Industrial Design
 
@@ -125,4 +126,8 @@ The purpose of this is to have a distinct portable computer to take to the field
 * **Materials:** PLA, "Leather" and Wire protector.
 * **Texture Language:** Leaves.
 * **Define Modularity:** GPIO pins and Raspberry ports out of structure.
-* **Ergonomic angle:** Opens at maximum of 120 degrees.
+
+## Thermal Engineering
+
+* Locate heat sources: Raspberry, Power bank and display
+* Heatsinks: Case with DUal Cooling Fans

@@ -169,11 +169,12 @@ This is the longest phase.
 
 ### Exterior Design
 
-* - [ ] Design shell
-* - [ ] Design hinges
-* - [ ] Design vents
-* - [ ] Design handles
-* - [ ] Design removable panels
+* - [X] Design shell
+* - [X] Design hinges
+* - [X] Design latch
+* - [X] Design handles
+* - [X] Design cable management
+* - [X] Design removable panels
 
 ### Deliverables
 
@@ -187,11 +188,10 @@ This is the longest phase.
 
 ### Tasks
 
-* - [ ] Locate heat sources
-* - [ ] Simulate airflow
-* - [ ] Design vents
-* - [ ] Select fans
-* - [ ] Add heatsinks
+* - [X] Locate heat sources
+* - [X] Simulate airflow
+* - [X] Design vents
+* - [X] Add heatsinks
 
 ### Deliverables
 
