@@ -20,6 +20,9 @@ A CyberDeck inspired on the Solar Punk theme
     - [Bill of Materials](#bill-of-materials)
   - [Solarpunk Industrial Design](#solarpunk-industrial-design)
   - [Thermal Engineering](#thermal-engineering)
+  - [Electrical Engineering](#electrical-engineering)
+    - [Battery](#battery)
+    - [Solar](#solar)
 
 ---
 
@@ -130,4 +133,23 @@ The purpose of this is to have a distinct portable computer to take to the field
 ## Thermal Engineering
 
 * Locate heat sources: Raspberry, Power bank and display
-* Heatsinks: Case with DUal Cooling Fans
+* Heatsinks: Case with Dual Cooling Fans
+
+## Electrical Engineering
+
+### Battery
+
+* Cells and Battery Management System (BMS): 10,000 mAh Power Bank with pass-through charging
+* USB-C Power Delivery: Integrated with the power bank, delivering to the raspberry through the USB-C docker energy entry
+* Charging circuit:
+
+<center> 
+
+<img width = "600px" src="docs/schematics.png">
+
+</center>
+
+### Solar
+
+* Solar panel: 5W solar panel
+* Battery monitoring: percentage integrated in the power bank display

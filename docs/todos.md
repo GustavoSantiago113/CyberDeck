@@ -207,16 +207,15 @@ This is the longest phase.
 
 Battery
 
-* - [ ] Select cells
-* - [ ] Battery Management System (BMS)
-* - [ ] USB-C Power Delivery
-* - [ ] Charging circuit
+* - [X] Select cells
+* - [X] Battery Management System (BMS)
+* - [X] USB-C Power Delivery
+* - [X] Charging circuit
 
 Solar
 
-* - [ ] Solar panel
-* - [ ] MPPT charger
-* - [ ] Battery monitoring
+* - [X] Solar panel
+* - [X] Battery monitoring
 
 ### Deliverables
 
