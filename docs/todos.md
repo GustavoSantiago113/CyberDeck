@@ -6,11 +6,10 @@
 
 Instead of decorative LEDs, make the machine visibly sustainable and repairable:
 
-* 🌱 **Integrated solar lid:** A slim solar panel mounted on the lid that trickle-charges the battery while outdoors.
 * 🌿 **Living ventilation:** Leaf-inspired vent geometry that directs airflow efficiently and doubles as a visual motif.
 * 🔧 **Repair-first construction:** Every major component is accessible with standard hex screws; no glue, and modular printed panels can be replaced individually.
 * 🪵 **Natural material accents:** Bamboo or walnut side grips, cork wrist rests, or leather carrying straps paired with printed structural parts.
-* 🔋 **Energy awareness:** An e-ink status display showing battery level, solar input, and power consumption even when the main system is off.
+* 🔋 **Energy awareness:** An e-ink status display showing battery level and power consumption even when the main system is off.
 
 ---
 
@@ -92,7 +91,7 @@ Design the cyberdeck as a complete system.
 * - [X] Select battery - 10,000 mAh Power Bank with pass-through charging
 * - [X] Select cooling - Home-made fan with motor and 3D printed parts
 * - [X] Select Wi-Fi Anthena - USB Wi‑Fi adapter with removable antennas
-* - [X] Select Powering - 5V Solar Panel (12W) + Solar USB Charger Controller + Outlet charger
+* - [X] Select Powering - Outlet charger
 * - [X] Select Memory - 128GB External HD + 32GB SD Card
 
 ### Architecture
@@ -211,48 +210,25 @@ Battery
 * - [X] Battery Management System (BMS)
 * - [X] USB-C Power Delivery
 * - [X] Charging circuit
-
-Solar
-
-* - [X] Solar panel
 * - [X] Battery monitoring
 
 ### Deliverables
 
-* Power Diagram
+* Wiring diagram
 
 ---
 
-# 🔌 Phase 7 — Electrical Integration
+# 🖨 Phase 7 — Manufacturing
 
-**Week 11**
-
-### Tasks
-
-* - [ ] Wiring diagram
-* - [ ] Connector selection
-* - [ ] Cable routing
-* - [ ] Heat shrink
-* - [ ] Label wires
-
-### Deliverables
-
-* Wiring Harness
-* Electrical Documentation
-
----
-
-# 🖨 Phase 8 — Manufacturing
-
-**Weeks 12–13**
+**Weeks 11–13**
 
 ## Week 12
 
 Prototype
 
-* - [ ] Print test pieces
-* - [ ] Verify tolerances
-* - [ ] Adjust CAD
+* - [X] Print test pieces
+* - [X] Verify tolerances
+* - [X] Adjust CAD
 
 ---
 
@@ -260,10 +236,10 @@ Prototype
 
 Final Prints
 
-* - [ ] Print enclosure
-* - [ ] Print brackets
-* - [ ] Print vents
-* - [ ] Print accessories
+* - [X] Print enclosure
+* - [X] Print brackets
+* - [X] Print vents
+* - [X] Print accessories
 
 ### Deliverables
 
@@ -271,7 +247,7 @@ Final Prints
 
 ---
 
-# 🔧 Phase 9 — Assembly
+# 🔧 Phase 8 — Assembly
 
 **Week 14**
 
@@ -279,17 +255,17 @@ Final Prints
 
 Mechanical
 
-* - [ ] Install inserts
-* - [ ] Assemble enclosure
-* - [ ] Install hinges
+* - [X] Install inserts
+* - [X] Assemble enclosure
+* - [X] Install hinges
 
 Electronics
 
-* - [ ] Install motherboard
-* - [ ] Install display
-* - [ ] Install battery
-* - [ ] Install cooling
-* - [ ] Connect wiring
+* - [X] Install motherboard
+* - [X] Install display
+* - [X] Install battery
+* - [X] Install cooling
+* - [X] Connect wiring
 
 ### Deliverables
 
@@ -297,7 +273,7 @@ Electronics
 
 ---
 
-# 💻 Phase 10 — Software
+# 💻 Phase 9 — Software
 
 **Week 15**
 
@@ -305,18 +281,18 @@ Electronics
 
 Operating System
 
-* - [ ] Install Linux
-* - [ ] Configure SSH
-* - [ ] Install Docker
-* - [ ] Install development tools
+* - [X] Install Linux
+* - [X] Configure SSH
+* - [X] Install Docker
+* - [X] Install development tools
 
 Customization
 
-* - [ ] Configure terminal
-* - [ ] Fan control
-* - [ ] Battery monitoring
-* - [ ] AI software
-* - [ ] Backup system
+* - [X] Configure terminal
+* - [X] Fan control
+* - [X] Battery monitoring
+* - [X] AI software
+* - [X] Backup system
 
 ### Deliverables
 
@@ -324,34 +300,34 @@ Customization
 
 ---
 
-# 🌍 Phase 11 — Testing
+# 🌍 Phase 10 — Testing
 
 **Week 16 (Days 1–4)**
 
 ### Mechanical
 
-* - [ ] Port accessibility
-* - [ ] Hinge durability
-* - [ ] Keyboard comfort
+* - [X] Port accessibility
+* - [X] Hinge durability
+* - [X] Keyboard comfort
 
 ### Electrical
 
-* - [ ] Battery runtime
-* - [ ] Charging
-* - [ ] USB functionality
+* - [X] Battery runtime
+* - [X] Charging
+* - [X] USB functionality
 
 ### Thermal
 
-* - [ ] CPU stress test
-* - [ ] GPU stress test
-* - [ ] Fan performance
+* - [X] CPU stress test
+* - [X] GPU stress test
+* - [X] Fan performance
 
 ### Field Testing
 
-* - [ ] Outdoor use
-* - [ ] Backpack transport
-* - [ ] Programming session
-* - [ ] Battery endurance
+* - [X] Outdoor use
+* - [X] Backpack transport
+* - [X] Programming session
+* - [X] Battery endurance
 
 ### Deliverables
 
@@ -360,26 +336,26 @@ Customization
 
 ---
 
-# 🌻 Phase 12 — Refinement & Documentation
+# 🌻 Phase 11 — Refinement & Documentation
 
 **Week 16 (Days 5–7)**
 
 ### Improvements
 
-* - [ ] Fix design issues
-* - [ ] Improve cable management
-* - [ ] Optimize cooling
-* - [ ] Reduce weight
-* - [ ] Refine software configuration
+* - [X] Fix design issues
+* - [X] Improve cable management
+* - [X] Optimize cooling
+* - [X] Reduce weight
+* - [X] Refine software configuration
 
 ### Documentation
 
-* - [ ] Final CAD files
-* - [ ] Wiring diagrams
-* - [ ] Bill of Materials (BOM)
-* - [ ] Build log with photos
-* - [ ] User manual
-* - [ ] Maintenance guide
+* - [X] Final CAD files
+* - [X] Wiring diagrams
+* - [X] Bill of Materials (BOM)
+* - [X] Build log with photos
+* - [X] User manual
+* - [X] Maintenance guide
 
 ### Final Deliverables
 
