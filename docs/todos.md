@@ -1,367 +1,377 @@
-# Solarpunk CyberDeck Build Protocol
+# CyberDeck Build Protocol — Jetson Orin Nano Field Deck
+
+A portable deck for the field and the greenhouse, used for **raw data analysis, IoT prototyping and coding**, with a **small coding-agent LLM running offline**. It does not collect data itself: datasets come in from the collection setup, and IoT devices are built and debugged on it.
+
+Schedule: [timeline.md](timeline.md) · Legend: ✅ = already on hand / already done
+Project Goals: [goals.md](goals.md)
+Design Notes: [design_notes.md](design_notes.md)
+Bill of Materials: [BOM.md](BOM.md)
+Deliverables write-ups: [deliverables.md](deliverables.md)
 
 ---
 
-## Solarpunk Feature Ideas
+# 🎯 Phase 0 — Mission Definition
 
-Instead of decorative LEDs, make the machine visibly sustainable and repairable:
+**Week 1** · **Goal:** a clear purpose and measurable project goals.
 
-* 🌿 **Living ventilation:** Leaf-inspired vent geometry that directs airflow efficiently and doubles as a visual motif.
-* 🔧 **Repair-first construction:** Every major component is accessible with standard hex screws; no glue, and modular printed panels can be replaced individually.
-* 🪵 **Natural material accents:** Bamboo or walnut side grips, cork wrist rests, or leather carrying straps paired with printed structural parts.
-* 🔋 **Energy awareness:** An e-ink status display showing battery level and power consumption even when the main system is off.
-
----
-
-# 🌱 Phase 0 — Mission Definition
-
-**Week 1**
-
-## Objectives
-
-* Define the purpose of the cyberdeck.
-* Establish project constraints.
-* Create the project vision.
+* - [ ] Define the purpose: raw field analysis, on-site IoT prototyping, offline coding
+* - [ ] Set the project goals
+* - [ ] Read the power bank label: 5V output current per port, combined output limit, input rating
+* - [ ] Inventory the parts on hand
 
 ### Deliverables
 
-* Project purpose
-* Characteristics goals
-* Uniqueness
-* Inspiration Board
+* Purpose and project goals
 
 ---
 
-# 🌿 Phase 1 — Requirements Engineering
+# 📐 Phase 1 — Requirements Engineering
 
-**Week 2**
-
-## Objectives
-
-Translate ideas into measurable requirements.
-
-### Tasks
+**Week 1** · **Goal:** measurable requirements, frozen before ordering.
 
 ### Hardware
 
-* - [x] Screen size
-* - [x] Keyboard size
-* - [x] Battery capacity
-* - [x] Storage
-* - [x] CPU/GPU
-* - [x] Connectivity
+* - [ ] Screen size — 7" HDMI, USB touch, ≥ 400 nits
+* - [ ] Keyboard size — 11.2" ✅
+* - [ ] Battery capacity — 10,000 mAh with pass-through ✅
+* - [ ] Storage — 512GB NVMe (OS + models) + 256GB external HD (datasets) + 32GB SD (recovery)
+* - [ ] CPU/GPU — Jetson Orin Nano 8GB (CUDA)
+* - [ ] Connectivity — USB Wi-Fi adapter with external antenna, internal Bluetooth, Ethernet, USB-A
 
 ### Software
 
-* - [x] Operating System
-* - [x] Programming environment
-* - [x] AI tools
-* - [x] Robotics tools
-* - [x] CAD software
+* - [ ] Operating System — JetPack 6.x (Ubuntu 22.04)
+* - [ ] Programming environment — Python first, C/C++ / CUDA when needed
+* - [ ] AI tools — local coding agent offline (ready-made agent-tuned model + Aider/Continue), Claude Code when online
+* - [ ] IoT tools — 40-pin GPIO (`Jetson.GPIO`), PlatformIO for ESP32/RP2040, MQTT test broker
+* - [ ] CAD software — FreeCAD
 
 ### Performance
 
-* - [x] Battery target
-* - [x] Temperature limits
-* - [x] Boot time
-* - [x] Weight
-* - [x] Noise level
+* - [ ] Battery target — ≥ 2 h heavy, ~3 h light, unlimited plugged in
+* - [ ] Temperature limits — no throttling in 7 W mode at 35 °C ambient; battery and outer case < 45 °C
+* - [ ] Boot time — up to 2 minutes
+* - [ ] Weight — ≤ 3 kg with charger and kit
+* - [ ] Noise level — low to medium
+* - [ ] LLM — 3B–4B Q4 coding model with tool calling, 16k context, ≤ 4 GB RAM including context, measured tok/s
 
 ### Deliverables
 
-* Requirement Specification Document
+* Requirement Specification
 
 ---
 
-# ☀️ Phase 2 — System Architecture
+# 🧩 Phase 2 — System Architecture
 
-**Weeks 3–4**
-
-## Objectives
-
-Design the cyberdeck as a complete system.
-
-### Tasks
+**Weeks 1–2** · **Goal:** a complete system design and parts ordered in week 1.
 
 ### Electronics
 
-* - [X] Select motherboard - RaspberryPi 5
-* - [X] Select display - 7" Touchscreen display
-* - [X] Select keyboard - Ultra Thin USB Mini Wired Keyboard (11.2")
-* - [X] Select battery - 10,000 mAh Power Bank with pass-through charging
-* - [X] Select cooling - Home-made fan with motor and 3D printed parts
-* - [X] Select Wi-Fi Anthena - USB Wi‑Fi adapter with removable antennas
-* - [X] Select Powering - Outlet charger
-* - [X] Select Memory - 128GB External HD + 32GB SD Card
+* - [ ] Motherboard — Jetson Orin Nano 8GB Super Dev Kit
+* - [ ] Display — 7" HDMI + USB touch, DP→HDMI adapter
+* - [x] Keyboard — Ultra Thin USB Mini Wired Keyboard (11.2") ✅
+* - [x] Battery — 10,000 mAh power bank with pass-through ✅
+* - [ ] Power — 5V → 12V boost (≥ 24 W), switch, fuse, bulk cap, USB-C panel input
+* - [ ] Cooling — Jetson stock heatsink + fan
+* - [x] Wi-Fi — USB adapter with external antenna ✅ (driver check in Phase 3)
+* - [x] Charging — outlet charger ✅
+* - [ ] Memory — 512GB NVMe + 256GB external HD ✅ + 32GB SD ✅
+* - [ ] IoT kit — 2× ESP32-S3, half breadboard, jumpers, sensors
 
 ### Architecture
 
-* - [X] System Block Diagram
-* - [X] Mechanical Block Diagram
+* - [ ] System Block Diagram
+* - [ ] Mechanical Block Diagram (compute in base, storage bay under keyboard)
+* - [ ] Power wiring diagram
 
 ### Purchasing
 
-* - [X] Create parts spreadsheet
-* - [X] Order components
+* - [ ] Parts spreadsheet / BOM
+* - [ ] **Order components by 23 Oct**
 
 ### Deliverables
 
 * System Architecture Diagram
-* Parts List (BOM)
+* Bill of Materials
 
 ---
 
-# 🌳 Phase 3 — Solarpunk Industrial Design
+# 🔌 Phase 3 — Bench Bring-up (Go / No-Go)
 
-**Week 5**
+**Week 3** · **Goal:** prove power, display and Wi-Fi on the bench before CAD.
 
-## Objectives
-
-Develop the visual identity before designing the enclosure.
-
-### Tasks
-
-* - [X] Define color palette
-* - [X] Select materials
-* - [X] Define texture language
-* - [X] Sketch exterior
-* - [X] Sketch interior layout
-* - [X] Determine ergonomic angles
-* - [X] Define modularity
+* - [ ] Flash JetPack 6.x to NVMe; keep the SD as a recovery image
+* - [ ] Set the boost to 12V, then power the Jetson from the bank through the switch and fuse
+* - [ ] Lock 7 W mode (`nvpmodel`); stress test for 30 min with all peripherals, no brownout
+* - [ ] Measure the draw at the bank with the inline meter (idle / analysis / LLM)
+* - [ ] Pass-through: plug in the charger while running, check for no reboot
+* - [ ] Display through DP→HDMI, touch working
+* - [ ] USB Wi-Fi adapter: identify the chipset (`lsusb`), install the ARM64 driver, prefer it over the internal Wi-Fi
+* - [ ] Keyboard, hub, HD, Bluetooth working
+* - [ ] **Decision:** go, or replace the boost / bank / display
 
 ### Deliverables
 
-* Design Sketchbook
-* Style Guide
+* Working bench system + measured power numbers
 
 ---
 
-# 🌾 Phase 4 — CAD Development
+# 🧠 Phase 4 — Local Coding LLM
 
-**Weeks 6–8**
+**Weeks 3–6 (parallel)** · **Goal:** a ready-made coding-agent model working offline as an agent, with no training.
 
-This is the longest phase.
+## Weeks 3–4 — Runtime & Model
 
-## Week 6
+* - [ ] Install Ollama, or build `llama.cpp` with CUDA (`llama-server --jinja` for tool calls)
+* - [ ] Download 2–3 agent-tuned coding models (3B–4B, Q4 GGUF, tool calling); store them on the NVMe
+* - [ ] Benchmark each in 7 W mode at 16k context: prompt processing + generation tok/s, RAM, watts
+* - [ ] Tune memory: KV cache q8_0, context size, lightweight desktop (XFCE) / zram
 
-### Component Modeling
+## Weeks 5–6 — Agent Setup
 
-* - [X] Measure every component
-* - [X] Create accurate CAD models
-* - [X] Organize CAD library
-
----
-
-## Week 7
-
-### Internal Layout
-
-* - [X] Arrange motherboard
-* - [X] Arrange battery
-* - [X] Route cables
-* - [X] Add mounting points
-* - [X] Add service access
-
----
-
-## Week 8
-
-### Exterior Design
-
-* - [X] Design shell
-* - [X] Design hinges
-* - [X] Design latch
-* - [X] Design handles
-* - [X] Design cable management
-* - [X] Design removable panels
+* - [ ] Aider in the terminal, pointed at the local server
+* - [ ] VS Code + Continue (agent mode) or Cline; check that tool calls work reliably
+* - [ ] Write 10 test tasks from your real work (sensor script, ESP32 MQTT client, fix a notebook bug, explain a traceback)
+* - [ ] Run the tasks on each model × front end; pick the best combination
+* - [ ] Project rules file (coding conventions, Jetson/ESP32 pinouts, your libraries)
+* - [ ] Local docs folder of datasheets and notes for the agent to search
+* - [ ] LLM server as a systemd service, started on demand (frees RAM when not used)
+* - [ ] One-command switch: local agent offline ↔ Claude Code online
 
 ### Deliverables
 
-* Complete CAD Assembly
+* Working offline coding agent + benchmark and task-success table
 
 ---
 
-# 🍃 Phase 5 — Thermal Engineering
+# ✏️ Phase 5 — Industrial Design & CAD
 
-**Week 9**
+**Weeks 2 and 4** · **Goal:** a complete CAD assembly with every part fitted.
 
-### Tasks
+## Week 2 — Component Modeling
 
-* - [X] Locate heat sources
-* - [X] Simulate airflow
-* - [X] Design vents
-* - [X] Add heatsinks
+* - [x] Shell, hinges, latches, handle ✅
+* - [ ] Jetson dev kit model (start from NVIDIA's published 3D model before it arrives)
+* - [ ] Measure display + driver board, boost, power bank, charger, HD, hub
+* - [ ] Measure the depth under the keyboard (decides where the charger goes)
+
+## Week 4 — Layout & Parts
+
+* - [ ] Cover Bottom: Jetson + bank layout, thermal wall, intake grille, cable routing
+* - [ ] Port bezel: USB-C power in, power switch, Ethernet, USB-A
+* - [ ] I/O strip: GPIO breakout, Qwiic/I²C, 2× USB-A, hub + HD mount underneath
+* - [ ] Keyboard lift-up tray (hinge + magnets)
+* - [ ] Under-keyboard bay: charger cradle + cable groove + removable IoT kit tray
+* - [ ] Cover Top: display bezel, USB Wi-Fi slot, plain finish
+* - [ ] Hinge cable path: FPC HDMI + USB
+* - [ ] Printed feet (~8 mm)
+* - [ ] Lid balance check
 
 ### Deliverables
 
-* Thermal Layout
+* Complete CAD assembly
 
 ---
 
-# 🔋 Phase 6 — Power System
+# 🌡 Phase 6 — Thermal Engineering
 
-**Week 10**
+**Weeks 3–4** · **Goal:** no throttling at 7 W, cool battery.
 
-### Tasks
-
-Battery
-
-* - [X] Select cells
-* - [X] Battery Management System (BMS)
-* - [X] USB-C Power Delivery
-* - [X] Charging circuit
-* - [X] Battery monitoring
+* - [ ] Locate heat sources: Jetson, boost converter, power bank, display
+* - [ ] Measure SoC temperature (`tegrastats`, `jtop`) in an open-air bench setup
+* - [ ] Design the intake grille + mesh, point the exhaust at the side vents
+* - [ ] Place the boost in the airflow
+* - [ ] Fan curve
 
 ### Deliverables
 
-* Wiring diagram
+* Thermal layout + measurements
 
 ---
 
-# 🖨 Phase 7 — Manufacturing
+# 🔋 Phase 7 — Power System
 
-**Weeks 11–13**
+**Weeks 3–4** · **Goal:** one plug in, one switch, measured runtime.
 
-## Week 12
-
-Prototype
-
-* - [X] Print test pieces
-* - [X] Verify tolerances
-* - [X] Adjust CAD
-
----
-
-## Week 13
-
-Final Prints
-
-* - [X] Print enclosure
-* - [X] Print brackets
-* - [X] Print vents
-* - [X] Print accessories
+* - [x] Cells + BMS — integrated in the power bank ✅
+* - [ ] USB-C panel input → bank input (pass-through)
+* - [ ] Bank 5V → switch → fuse → boost 12V → bulk cap → barrel jack
+* - [ ] Battery monitoring — bank display visible through a window + inline meter
+* - [ ] Runtime measured per use case
 
 ### Deliverables
 
-* Finished Printed Parts
+* Wiring diagram + measured power budget
 
 ---
 
-# 🔧 Phase 8 — Assembly
+# 🖨 Phase 8 — Manufacturing
 
-**Week 14**
+**Weeks 5–6** · **Goal:** all new parts printed (PETG near heat).
 
-### Tasks
+## Week 5 — Prototype
+
+* - [ ] Test-print the port bezel, Jetson bracket, charger cradle and keyboard hinge
+* - [ ] Verify tolerances, adjust CAD
+
+## Week 6 — Final Prints
+
+* - [x] Case Top, Case Bottom, Handle, Latches, Hinge Pin ✅
+* - [ ] Cut the side-wall window in the Case Bottom
+* - [ ] Cover Bottom (PETG), Cover Top
+* - [ ] Port bezel, I/O strip, Jetson bracket, keyboard tray, IoT kit tray, feet
+
+### Deliverables
+
+* Finished printed parts + STLs in `3D Prints/`
+
+---
+
+# 🔧 Phase 9 — Assembly
+
+**Week 7** · **Goal:** a fully assembled, self-contained deck.
 
 Mechanical
 
-* - [X] Install inserts
-* - [X] Assemble enclosure
-* - [X] Install hinges
+* - [x] Inserts, enclosure, hinges ✅
+* - [ ] Port bezel, I/O strip, keyboard tray, feet
 
 Electronics
 
-* - [X] Install motherboard
-* - [X] Install display
-* - [X] Install battery
-* - [X] Install cooling
-* - [X] Connect wiring
+* - [ ] Jetson + NVMe
+* - [ ] Power chain: panel input, bank, switch, fuse, boost, capacitor
+* - [ ] Display + driver; FPC HDMI + USB through the hinge
+* - [ ] USB Wi-Fi adapter in the lid slot
+* - [ ] Hub + HD under the I/O strip; GPIO ribbon to the breakout
+* - [ ] Charger cradle + IoT kit tray packed; silica gel
 
 ### Deliverables
 
-* Fully Assembled Cyberdeck
+* Fully assembled CyberDeck
 
 ---
 
-# 💻 Phase 9 — Software
+# 💻 Phase 10 — Software
 
-**Week 15**
-
-### Tasks
+**Weeks 3 and 7** · **Goal:** a ready-to-use analysis and prototyping system.
 
 Operating System
 
-* - [X] Install Linux
-* - [X] Configure SSH
-* - [X] Install Docker
-* - [X] Install development tools
+* - [ ] JetPack 6.x on NVMe, SSH, Docker (NVIDIA runtime), VS Code, Claude Code
+* - [ ] Terminal config, 7 W mode locked at boot, `jtop`
 
-Customization
+Analysis
 
-* - [X] Configure terminal
-* - [X] Fan control
-* - [X] Battery monitoring
-* - [X] AI software
-* - [X] Backup system
+* - [ ] JupyterLab, pandas/polars, scikit-learn, matplotlib, OpenCV, CUDA PyTorch
+* - [ ] Import workflow: HD / SD / network → analysis folder
+* - [ ] Notebook templates for your usual raw analyses
+
+IoT Prototyping
+
+* - [ ] PlatformIO / Arduino CLI / ESP-IDF; flash and serial monitor over USB
+* - [ ] `Jetson.GPIO` + `smbus2` sensor test scripts
+* - [ ] Local Mosquitto broker for testing MQTT code
+* - [ ] Backup: rsync / Syncthing of code and notebooks
 
 ### Deliverables
 
-* Fully Configured System
+* Fully configured system
 
 ---
 
-# 🌍 Phase 10 — Testing
+# 🌍 Phase 11 — Testing
 
-**Week 16 (Days 1–4)**
+**Week 8 (Mon–Thu)** · **Goal:** prove every project goal with numbers.
 
 ### Mechanical
 
-* - [X] Port accessibility
-* - [X] Hinge durability
-* - [X] Keyboard comfort
+* - [ ] Port, I/O strip and storage bay access
+* - [ ] Hinge with cables (100 open/close cycles)
+* - [ ] Lid balance, keyboard tray stability, nothing rattles when shaken
+* - [ ] Total weight with charger + kit ≤ 3 kg
 
 ### Electrical
 
-* - [X] Battery runtime
-* - [X] Charging
-* - [X] USB functionality
+* - [ ] Runtime: light, analysis + LLM, sustained LLM
+* - [ ] Pass-through: runs indefinitely on the single plug, no reboot on plug/unplug
+* - [ ] USB: all ports with the full load (HD + Wi-Fi + display + ESP32)
 
 ### Thermal
 
-* - [X] CPU stress test
-* - [X] GPU stress test
-* - [X] Fan performance
+* - [ ] CPU + GPU stress for 30 min in 7 W mode
+* - [ ] Sustained LLM generation for 15 min
+* - [ ] Greenhouse ambient test (throttling, battery and case temperature)
 
-### Field Testing
+### Field
 
-* - [X] Outdoor use
-* - [X] Backpack transport
-* - [X] Programming session
-* - [X] Battery endurance
+* - [ ] Raw analysis of a real dataset on site
+* - [ ] Debug and re-flash an IoT device on site using the carried kit
+* - [ ] Offline coding session with the local agent only (complete 3 real tasks)
+* - [ ] Backpack transport, humidity and dust exposure
 
 ### Deliverables
 
-* Test Report
-* Issue List
+* Test report + issue list
 
 ---
 
-# 🌻 Phase 11 — Refinement & Documentation
+# 🔁 Phase 12 — Refinement & Documentation
 
-**Week 16 (Days 5–7)**
+**Week 8 (Fri–Sat)** · **Goal:** fix what testing found and document the build.
 
 ### Improvements
 
-* - [X] Fix design issues
-* - [X] Improve cable management
-* - [X] Optimize cooling
-* - [X] Reduce weight
-* - [X] Refine software configuration
+* - [ ] Fix design issues
+* - [ ] Cable management
+* - [ ] Cooling and fan curve
+* - [ ] Weight
+* - [ ] Software configuration
 
 ### Documentation
 
-* - [X] Final CAD files
-* - [X] Wiring diagrams
-* - [X] Bill of Materials (BOM)
-* - [X] Build log with photos
-* - [X] User manual
-* - [X] Maintenance guide
+* - [ ] README (gallery, specs, BOM, block diagrams)
+* - [ ] FreeCAD source files + STEP + STL
+* - [ ] Wiring diagram
+* - [ ] Build log with photos
+* - [ ] User manual (power switch, charging, LLM, IoT kit)
+* - [ ] Maintenance guide (intake mesh, silica gel, re-flash from SD)
 
-### Final Deliverables
+### Deliverables
 
-* ✅ Complete Solarpunk Cyberdeck
-* ✅ Parametric CAD project
-* ✅ Printable STL/STEP files
-* ✅ Wiring schematics
-* ✅ Software image and configuration
-* ✅ Full documentation for future upgrades or replication
+* Documented CyberDeck
+
+---
+
+# 📄 Phase 13 — Hardware Paper
+
+**Weeks 5–8 (parallel, ready 13 Dec)** · **Goal:** a submission-ready open-hardware paper.
+
+Structure follows the open-hardware journal format (e.g., *HardwareX*; alternative: *Journal of Open Hardware*). Check the chosen journal's current author guidelines before drafting. Build each paper section from the matching write-ups in [deliverables.md](deliverables.md) (each one is tagged 📄 with its section).
+
+### Week 5 — Plan
+
+* - [ ] Choose the target venue and download its template
+* - [ ] Outline + figure list (block diagrams, CAD renders, power chain, layout, photos)
+* - [ ] Collect references (other cyberdecks, edge-AI devices, field computers for agriculture)
+
+### Weeks 6–7 — Draft (no test data needed)
+
+* - [ ] Specifications table (hardware name, subject area, cost, license, repository)
+* - [ ] Hardware in context — why a field deck for greenhouse analysis and IoT prototyping
+* - [ ] Hardware description — architecture, power chain, layout, carry system, offline LLM
+* - [ ] Design files summary — every CAD/STL file with license and location
+* - [ ] Bill of materials — part, quantity, cost, source
+* - [ ] Build instructions — step by step with photos, safety notes (lithium, boost wiring)
+* - [ ] Operation instructions — power, charging, modes, LLM, IoT workflow
+
+### Week 8 — Validation & Final
+
+* - [ ] Validation and characterization: runtime, power draw, thermals, LLM tok/s, agent task success rate, weight, boot time — measured against the Project Goals
+* - [ ] Limitations and future work (e.g., PD trigger for 15 W mode, larger battery)
+* - [ ] Abstract, keywords, figures and tables final
+* - [ ] Archive the design files with a DOI (Zenodo/OSF) under the repo's MIT license (and an open-hardware license for CAD, if the venue requires it)
+* - [ ] Proofread; author contributions, acknowledgements, conflict of interest statement
+
+### Deliverables
+
+* ✅ Submission-ready hardware paper + archived design files
