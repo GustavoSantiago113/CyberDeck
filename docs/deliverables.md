@@ -1,7 +1,5 @@
 # 📦 Deliverables
 
-One place to write up each phase's deliverable as you finish it. Each write-up is a rough draft of a section of the hardware paper, so when you reach Phase 13 most of the text, numbers and figures already exist.
-
 **How to use it**
 - Write as soon as a deliverable is done, while you still remember the details.
 - Write in plain language: short sentences, one idea each. Say **what** you did, **why**, and **what happened**.
@@ -18,28 +16,33 @@ One place to write up each phase's deliverable as you finish it. Each write-up i
 
 **Status:** 🟨 · 📄 *Hardware in context*, *Specifications table*
 
-**What the deck is**
-The CyberDeck is a small portable computer in a 3D-printed case. I take it to the field and to the greenhouse to look at data, build and fix IoT devices, and write code. It runs an AI coding assistant on the device itself, so it works without internet.
+**What the deck is.**
+The CyberDeck is a small portable computer in a 3D-printed case. I will take it to the field and to the greenhouse to look at data collected over there, build, debug and fix IoT devices, and write code. It runs an AI coding assistant on the device itself and Claude Code so it can work without internet.
 
-**What it is not**
-It does not collect data. The sensors and loggers in the greenhouse do that. The deck reads their data afterwards.
+**What it is not.**
+It does not collect data. The sensors, loggers, and cameras in the greenhouse and field do that. The deck reads and analyze their data afterwards.
 
-**Why I built it**
-A normal laptop is not made for the greenhouse: it is fragile, it has no pins for wiring sensors, and its AI tools need internet. I wanted one box that has a screen, a keyboard, a battery, pins for electronics, a kit of parts, and an AI helper that works offline. `[TODO: add your own reason / a real situation where you needed this]`
+**Why I built it.**
+A normal laptop is not made for the greenhouse and mainly not the field: it is fragile, more expensive it has no pins for wiring sensors and actuators, and its AI tools may need internet. I wanted one box that has a screen, a keyboard, a battery, pins for electronics, a kit of parts, and an AI helper that works offline. Some real situations that I can use this:
+
+- Check the readings of a homemade weather station, and if something is wrong, debug in the local.
+- Get images from the smartphones that are being used to collect imagery data in the field, and check the results of our machine learning models on them. If the images would need to be re-taken, we can already do it in the field and re-check.
+- In-field testing of sensors and actuators without having to take my desktop computer (impossible) or company's laptop there.
 
 **Project goals** (from [goals.md](goals.md))
 
-| Goal | Target | Result |
-| ---- | ------ | ------ |
-| Battery life | ≥ 2 h heavy use, ~3 h light use, unlimited plugged in | `[TODO]` |
-| Power input | One plug charges and runs the deck | `[TODO]` |
-| Weight | ≤ 3 kg with charger and kit | `[TODO]` |
-| Local AI | 3B–4B coding-agent model working offline | `[TODO]` |
-| Carry | Charger + IoT kit inside the case | `[TODO]` |
-| Schedule | Done by 13 Dec 2026 | `[TODO]` |
-| Budget | ~US$ 500 | `[TODO]` (see [BOM.md](BOM.md)) |
+| Goal | Target |
+| ---- | ------ | 
+| Battery life | ≥ 2 h heavy use, ~3 h light use, unlimited plugged in | 
+| Power input | One plug charges and runs the deck | 
+| Weight | ≤ 3 kg with charger and kit | 
+| Local AI | 3B–4B coding-agent model working offline | 
+| Carry | Charger + IoT kit inside the case | 
+| Schedule | Done by 13 Dec 2026 | 
+| Budget | ~US$ 500 | 
 
-**Evidence:** `[TODO: photo of the parts on hand]`
+**Power Bank reading:** `[TODO: Add voltage and current of the power bank]`
+**Parts on Hand:** `[TODO: table of the parts on hand]`
 
 ---
 

@@ -14,14 +14,14 @@ Deliverables write-ups: [deliverables.md](deliverables.md)
 
 **Week 1** · **Goal:** a clear purpose and measurable project goals.
 
-* - [ ] Define the purpose: raw field analysis, on-site IoT prototyping, offline coding
-* - [ ] Set the project goals
+* - [X] Define the purpose: raw field analysis, on-site IoT prototyping, offline coding
+* - [X] Set the project goals
 * - [ ] Read the power bank label: 5V output current per port, combined output limit, input rating
 * - [ ] Inventory the parts on hand
 
 ### Deliverables
 
-* Purpose and project goals
+* Purpose, project goals, and table of the parts on hand
 
 ---
 
@@ -36,19 +36,18 @@ Deliverables write-ups: [deliverables.md](deliverables.md)
 * - [ ] Battery capacity — 10,000 mAh with pass-through ✅
 * - [ ] Storage — 512GB NVMe (OS + models) + 256GB external HD (datasets) + 32GB SD (recovery)
 * - [ ] CPU/GPU — Jetson Orin Nano 8GB (CUDA)
-* - [ ] Connectivity — USB Wi-Fi adapter with external antenna, internal Bluetooth, Ethernet, USB-A
+* - [ ] Connectivity — USB Wi-Fi adapter with external antenna, internal Bluetooth, USB-A
 
 ### Software
 
 * - [ ] Operating System — JetPack 6.x (Ubuntu 22.04)
 * - [ ] Programming environment — Python first, C/C++ / CUDA when needed
 * - [ ] AI tools — local coding agent offline (ready-made agent-tuned model + Aider/Continue), Claude Code when online
-* - [ ] IoT tools — 40-pin GPIO (`Jetson.GPIO`), PlatformIO for ESP32/RP2040, MQTT test broker
-* - [ ] CAD software — FreeCAD
+* - [ ] IoT tools — 40-pin GPIO (`Jetson.GPIO`), PlatformIO on VSCode for ESP32/Arduino, MQTT test broker
 
 ### Performance
 
-* - [ ] Battery target — ≥ 2 h heavy, ~3 h light, unlimited plugged in
+* - [ ] Battery target — ≥ 2 h heavy, ~3 h light, unlimited when plugged in
 * - [ ] Temperature limits — no throttling in 7 W mode at 35 °C ambient; battery and outer case < 45 °C
 * - [ ] Boot time — up to 2 minutes
 * - [ ] Weight — ≤ 3 kg with charger and kit

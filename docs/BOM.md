@@ -36,11 +36,11 @@ Tracks what's on hand, what still needs buying, and what it all costs.
 
 | # | Item | Qty | Status | Unit (US$) | Total (US$) | Price | Weight (g) | Source / Notes |
 | - | ---- | --: | ------ | ---------: | ----------: | ----- | ---------: | -------------- |
-| A1 | NVIDIA Jetson Orin Nano 8GB Super Developer Kit | 1 | Need | 249.00 | 249.00 | est. | | Includes heatsink, fan and Wi-Fi/BT card |
-| A2 | NVMe SSD 512GB, M.2 2280 | 1 | Need | 40.00 | 40.00 | est. | | OS + models |
-| A3 | External HD 256GB | 1 | Have | 7.79 | 7.79 | paid | | Datasets in and out |
-| A4 | microSD card 32GB | 1 | Have | 9.87 | 9.87 | paid | | Recovery / flash image |
-| | **Subtotal** | | | | **Have 17.66 · Need 289.00** | | | |
+| A1 | NVIDIA Jetson Orin Nano 8GB Super Developer Kit | 1 | Have | 300.00 | 300.00 | paid | | Includes heatsink, fan and Wi-Fi/BT card |
+| A2 | NVMe SSD 256GB, M.2 2280 | 1 | Need | 42.29 | 42.29 | est. | | OS + models |
+| A3 | External HD 256GB | 1 | Have | 0 | 0 | paid | | Datasets in and out (Optional) |
+| A4 | microSD card 64GB | 1 | Have | 24.99 | 24.99 | paid | | Recovery / flash image |
+| | **Subtotal** | | | | **Have 324.99 · Need 42.29** | | | |
 
 ## B. Display & Input
 
